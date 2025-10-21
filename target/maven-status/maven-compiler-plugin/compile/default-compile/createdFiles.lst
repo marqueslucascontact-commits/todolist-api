@@ -1,0 +1,4 @@
+br\com\lucas\todolistapi\model\Task.class
+br\com\lucas\todolistapi\repository\TaskRepository.class
+br\com\lucas\todolistapi\controller\TaskController.class
+br\com\lucas\todolistapi\TodolistApiApplication.class
