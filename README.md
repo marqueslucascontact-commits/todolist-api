@@ -1,58 +1,33 @@
-# Lucas ToDoList API
+Tecnologias que usei
 
-API RESTful desenvolvida em Java com Spring Boot e banco de dados H2 para gerenciamento de tarefas.
+Java 17
 
-## ⚙️ Tecnologias
-- Java 17
-- Spring Boot 3
-- Spring Data JPA
-- H2 Database
+Spring Boot 3
 
-## 📋 Funcionalidades
-- Criar tarefa
-- Listar todas as tarefas
-- Buscar tarefa por ID
-- Atualizar tarefa existente
-- Remover tarefa
+Spring Data JPA
 
-Cada tarefa possui:
-- id
-- nome
-- dataEntrega
-- responsavel (coloque seu nome e RU aqui!)
-- status (Pendente ou Concluída)
+Banco de dados H2 (na memória)
 
-## 🚀 Como rodar o projeto
-1. Tenha o Java 17 e Maven instalados.
-2. No terminal, execute:
-   ```bash
-   mvn spring-boot:run
-   ```
-3. Acesse a API em: http://localhost:8080/api/tasks  
-4. Console H2 disponível em: http://localhost:8080/h2-console  
-   (JDBC URL: `jdbc:h2:mem:todolistdb`)
+O que dá pra fazer
 
-## 🧪 Exemplos de requisições
+Criar tarefa
 
-### Criar tarefa (POST /api/tasks)
-```json
-{
-  "nome": "Tarefa de Teste - Lucas da Silva Marques - RU: SEU_RU_AQUI",
-  "dataEntrega": "2025-10-31",
-  "responsavel": "Lucas da Silva Marques - RU: SEU_RU_AQUI",
-  "status": "Pendente"
-}
-```
+Listar todas as tarefas
 
-### Atualizar tarefa (PUT /api/tasks/{id})
-```json
-{
-  "nome": "Tarefa Atualizada - Lucas da Silva Marques - RU: SEU_RU_AQUI",
-  "dataEntrega": "2025-11-05",
-  "responsavel": "Lucas da Silva Marques - RU: SEU_RU_AQUI",
-  "status": "Concluída"
-}
-```
+Buscar tarefa pelo ID
 
-## 🧾 Observações
-Inclua prints no Postman de cada funcionalidade (criar, listar, atualizar, remover) mostrando seu nome e RU, e envie o link do projeto (GitHub) junto ao Caderno de Atividades.
+Atualizar tarefa que já existe
+
+Apagar tarefa
+
+Cada tarefa tem essas infos:
+
+id
+
+nome
+
+data de entrega
+
+responsável (coloquei meu nome e RU)
+
+status (se tá pendente ou concluída)
